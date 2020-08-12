@@ -2,7 +2,7 @@
 ## Overview
 
 This project contains implementation of a pipelined and non-pipelined MIPS Processor. Once this project is completed, there will be a more detailed guide detailing
-the process which was undertaken in the development of this project in the section down below.
+the process which was undertaken in the development of this project in the wiki.
 
 **NOTE:** projects in this repo are done solely without any hardware (i.e. a FPGA dev board). Projects in this repo will eventually be verified on some hardware platform which will be indicated later on in the section below.
 
@@ -31,12 +31,14 @@ This section will outline the progress of the various aspect for this project.
 
 | Modules                       | Current Status        |
 |-------------------------------|-----------------------|
-| ALU                           | In Progress           |
+| ALU                           | Finished              |
+| Decoder                       | Finished              |
+| Mux                           | Finished              |
 | Data Memory                   | Not Started           |
 | Instruction Memory            | Not Started           |
-| Register                      | Not Started           |
+| Register                      | Finished              |
 | Control Unit                  | Not Started           |
-| MIPS Core                     | Not Started           |
+| MIPS Datapath                 | Not Started           |
 
 ### Pipelined
 
@@ -44,12 +46,14 @@ This section will outline the progress of the various aspect for this project.
 
 | Modules                       | Current Status        |
 |-------------------------------|-----------------------|
-| ALU                           | In Progress           |
+| ALU                           | Not Started           |
+| Decoder                       | Not Started           |
+| Mux                           | Not Started           |
 | Data Memory                   | Not Started           |
 | Instruction Memory            | Not Started           |
 | Register                      | Not Started           |
 | Control Unit                  | Not Started           |
-| MIPS Core                     | Not Started           |
+| MIPS Datapath                 | Not Started           |
 
 ## Detailed Development Process
 
