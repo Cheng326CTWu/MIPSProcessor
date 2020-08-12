@@ -1,0 +1,7 @@
+module sll2
+(
+	a,
+	y
+);
+
+endmodule
