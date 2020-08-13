@@ -1,12 +1,12 @@
 module sll2
 (
 	a,
-	y
+	res
 );
 
 	input [31:0] a;
-	output [31:0] y;
+	output [31:0] res;
 
-	assign y = a << 2;
+	assign res = a << 2;
 
 endmodule

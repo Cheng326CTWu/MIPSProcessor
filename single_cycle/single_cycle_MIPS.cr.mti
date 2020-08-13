@@ -5,20 +5,6 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 Top level modules:
 	sll2
 
-} {} {}} C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/register32.v {1 {vlog -work work -stats=none C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/register32.v
-Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module register
-
-Top level modules:
-	register
-
-} {} {}} C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/decoder4.v {1 {vlog -work work -stats=none C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/decoder4.v
-Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module decoder4
-
-Top level modules:
-	decoder4
-
 } {} {}} C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/mux4.v {1 {vlog -work work -stats=none C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/mux4.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
 -- Compiling module mux4_1
@@ -26,12 +12,81 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 Top level modules:
 	mux4_1
 
+} {} {}} C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/register_file32.v {1 {vlog -work work -stats=none C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/register_file32.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module register_file32
+
+Top level modules:
+	register_file32
+
+} {} {}} C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/sign_ext.v {1 {vlog -work work -stats=none C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/sign_ext.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module sign_ext
+
+Top level modules:
+	sign_ext
+
+} {} {}} C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/register32.v {1 {vlog -work work -stats=none C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/register32.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module register
+
+Top level modules:
+	register
+
 } {} {}} C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/alu.v {1 {vlog -work work -stats=none C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/alu.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
 -- Compiling module alu
 
 Top level modules:
 	alu
+
+} {} {}} C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/rom.v {1 {vlog -work work -stats=none C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/rom.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module rom
+
+Top level modules:
+	rom
+
+} {} {}} C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/adder.v {1 {vlog -work work -stats=none C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/adder.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module adder
+
+Top level modules:
+	adder
+
+} {} {}} C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/ram.v {1 {vlog -work work -stats=none C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/ram.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module ram
+
+Top level modules:
+	ram
+
+} {} {}} C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/core.v {1 {vlog -work work -stats=none C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/core.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module ram
+-- Compiling module rom
+-- Compiling module adder
+-- Compiling module sign_ext
+-- Compiling module mux2_1
+-- Compiling module mux4_1
+-- Compiling module alu
+-- Compiling module register_file32
+-- Compiling module sll2
+-- Compiling module register
+-- Compiling module controlUnit
+-- Compiling module core
+
+Top level modules:
+	mux4_1
+	controlUnit
+	core
+
+} {} {}} C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/decoder4.v {1 {vlog -work work -stats=none C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/decoder4.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module decoder4
+
+Top level modules:
+	decoder4
 
 } {} {}} C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/decoder5.v {1 {vlog -work work -stats=none C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/decoder5.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
@@ -46,12 +101,5 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 
 Top level modules:
 	mux2_1
-
-} {} {}} C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/adder.v {1 {vlog -work work -stats=none C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/adder.v
-Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module adder
-
-Top level modules:
-	adder
 
 } {} {}}

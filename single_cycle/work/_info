@@ -9,170 +9,339 @@ z2
 cModel Technology
 dC:/Modeltech_pe_edu_10.4a/examples
 vadder
-!s110 1597193088
+Z0 !s110 1597296791
 !i10b 1
 !s100 he^kjZlGQDBnGz_SUBzL>3
-IG2YRR@XS:=dnH^[PL^5eU3
-Z0 VDg1SIo80bB@j0V0VzS_@n1
-Z1 dC:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle
+I5fP5T96`1;8ieJ]D?i<oz2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle
 w1597193083
-8C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/adder.v
-FC:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/adder.v
+8adder.v
+Fadder.v
 L0 1
-Z2 OP;L;10.4a;61
+Z3 OP;L;10.4a;61
 r1
 !s85 0
 31
-!s108 1597193088.000000
-!s107 C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/adder.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/adder.v|
+Z4 !s108 1597296791.000000
+Z5 !s107 control.v|register32.v|sll2.v|register_file32.v|alu.v|mux4.v|mux2.v|sign_ext.v|adder.v|rom.v|ram.v|C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/core.v|
+Z6 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/core.v|
 !s101 -O0
 !i113 1
-Z3 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+Z7 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
 valu
-!s110 1597183051
+R0
 !i10b 1
 !s100 [JbNM6bET7R4iYAHN`n_E2
-II1UQ^0@HZBRfAKf]EJ]MF1
-R0
+Ig899OS2^K:6J8b?Y>kcTM3
 R1
-w1597183046
-8C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/alu.v
-FC:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/alu.v
-L0 4
 R2
+w1597183046
+8alu.v
+Falu.v
+L0 4
+R3
 r1
 !s85 0
 31
-!s108 1597183051.000000
-!s107 C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/alu.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/alu.v|
+R4
+R5
+R6
 !s101 -O0
 !i113 1
+R7
+vcontrolUnit
+R0
+!i10b 1
+!s100 MNZFC6Fn8PUf3kJofz[Y01
+I_<hiflUlz`Zm=MF:12XoJ1
+R1
+R2
+w1597294957
+8control.v
+Fcontrol.v
+L0 3
 R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7
+ncontrol@unit
+vcore
+R0
+!i10b 1
+!s100 [Y;L5H_j:L=9Q1l=1czV23
+IDn]jA1jfSPK2Vdjoi4mgU1
+R1
+R2
+w1597287805
+8C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/core.v
+FC:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/core.v
+L0 13
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7
+vcore_tb
+R0
+!i10b 1
+!s100 zCG0LmE599nj0U=jYQP=M2
+IgV2MPGC`0eAb0E[333dFJ2
+R1
+R2
+w1597296650
+8C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/core_tb.v
+FC:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/core_tb.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/core_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/core_tb.v|
+!s101 -O0
+!i113 1
+R7
+vdatapath
+!s110 1597284498
+!i10b 1
+!s100 VEeBo5MIdA<3mfZ>QmBom2
+IYSZ;9:K7FQ4I]WfM8E;^<3
+R1
+R2
+w1597284495
+8C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/datapath.v
+FC:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/datapath.v
+L0 10
+R3
+r1
+!s85 0
+31
+!s108 1597284498.000000
+!s107 register32.v|sll2.v|register_file32.v|alu.v|mux4.v|mux2.v|sign_ext.v|adder.v|C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/datapath.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/datapath.v|
+!s101 -O0
+!i113 1
+R7
 vdecode5
-!s110 1597200765
+!s110 1597296790
 !i10b 1
 !s100 ;@:9Mj1In@AYHSoWF2Ala2
 I[=;MVSiiISTbaFMEhzb;S2
-R0
 R1
+R2
 w1597200762
 8C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/decoder5.v
 FC:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/decoder5.v
 L0 1
-R2
+R3
 r1
 !s85 0
 31
-!s108 1597200765.000000
+!s108 1597296790.000000
 !s107 C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/decoder5.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/decoder5.v|
 !s101 -O0
 !i113 1
-R3
+R7
 vdecoder4
-!s110 1597199748
+!s110 1597296789
 !i10b 1
 !s100 mhMAP<ogYY74Si7A]QYeH0
 I`]KIz9OZLm1ce0SQO:G672
-R0
 R1
+R2
 w1597199743
 8C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/decoder4.v
 FC:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/decoder4.v
 L0 1
-R2
+R3
 r1
 !s85 0
 31
-!s108 1597199748.000000
+!s108 1597296789.000000
 !s107 C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/decoder4.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/decoder4.v|
 !s101 -O0
 !i113 1
-R3
+R7
 vmux2_1
-!s110 1597198266
+R0
 !i10b 1
 !s100 _@H2AZYXoW]G;VlhY_3QL1
-I1OYkGD6SXLAeNVK3>h?6T0
-R0
+IdDlLz:bg[<ln^c[hPllHS0
 R1
-w1597198260
-8C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/mux2.v
-FC:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/mux2.v
-L0 1
 R2
+w1597198260
+8mux2.v
+Fmux2.v
+L0 1
+R3
 r1
 !s85 0
 31
-!s108 1597198266.000000
-!s107 C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/mux2.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/mux2.v|
+R4
+R5
+R6
 !s101 -O0
 !i113 1
-R3
+R7
 vmux4_1
-!s110 1597198564
+R0
 !i10b 1
 !s100 dFR>CK_z4cKKZ53b<bFOY3
-IHA[W;=34]^S8709i;oX4J1
-R0
+IY3dJ?SRT_bT5ESHRj0]mX0
 R1
+R2
 w1597198560
-8C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/mux4.v
-FC:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/mux4.v
+8mux4.v
+Fmux4.v
 L0 1
-R2
+R3
 r1
 !s85 0
 31
-!s108 1597198564.000000
-!s107 C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/mux4.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/mux4.v|
+R4
+R5
+R6
 !s101 -O0
 !i113 1
+R7
+vram
+R0
+!i10b 1
+!s100 5<1zOMjiCfj6LQQ1:8BP]2
+I9GB79d1`1DbCeVT@aWTbY1
+R1
+R2
+w1597269922
+8ram.v
+Fram.v
+L0 2
 R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7
 vregister
-!s110 1597201388
-!i10b 1
-!s100 VR9Wee[Wn9Ne91cRQY>K52
-IR=C>SIAG9WiN?IAMPB=GF3
 R0
+!i10b 1
+!s100 lP9K1cgTTd^V=COIL72WW1
+IzXMZ3U3S>_EG[l=;136kl1
 R1
-w1597201379
-8C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/register32.v
-FC:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/register32.v
-L0 1
 R2
+w1597294416
+8register32.v
+Fregister32.v
+L0 1
+R3
 r1
 !s85 0
 31
-!s108 1597201388.000000
-!s107 C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/register32.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/register32.v|
+R4
+R5
+R6
 !s101 -O0
 !i113 1
+R7
+vregister_file32
+R0
+!i10b 1
+!s100 o[=ARY[6aVZcXi?1kH[F:0
+Im8gO_Y8]acEGZQX3<N3922
+R1
+R2
+w1597294359
+8register_file32.v
+Fregister_file32.v
+L0 1
 R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7
+vrom
+R0
+!i10b 1
+!s100 EKPKUfc[EPc3BC1o^9mck2
+IWa6B^GQ^7__hEB^DFkPKh2
+R1
+R2
+w1597269282
+8rom.v
+From.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7
+vsign_ext
+R0
+!i10b 1
+!s100 jf_cS7XY42Qb4zgCHD2Sm2
+IQ;0]0HSe8?FU<7o4aPZAS0
+R1
+R2
+w1597264072
+8sign_ext.v
+Fsign_ext.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7
 vsll2
-!s110 1597201754
-!i10b 1
-!s100 I=FbIE7EAj3jlP6;nc`8U2
-I@WKTeI4DmZ7e=Eak4o0KR2
 R0
+!i10b 1
+!s100 <>C5H=H:nWHc5fmSYWg6D1
+I1YJ[OP`An:2@nLM3KG`;52
 R1
-w1597201748
-8C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/sll2.v
-FC:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/sll2.v
-L0 1
 R2
+w1597283231
+8sll2.v
+Fsll2.v
+L0 1
+R3
 r1
 !s85 0
 31
-!s108 1597201754.000000
-!s107 C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/sll2.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Owner/Desktop/verilog/MIPSProcessor/single_cycle/sll2.v|
+R4
+R5
+R6
 !s101 -O0
 !i113 1
-R3
+R7
