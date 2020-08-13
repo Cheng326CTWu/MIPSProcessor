@@ -36,10 +36,10 @@ module controlUnit
 				6'b100011: aluOp <= 3'b001;			// SUBU
 				6'b100100: aluOp <= 3'b010;			// AND
 				6'b100101: aluOp <= 3'b011;			// OR
-				6'b100110: aluOp <= 3'b100;			// SLL 
-				6'b100111: aluOp <= 3'b101;			// SRL
-				6'b101000: aluOp <= 3'b110;			// SLT
-				6'b101001: aluOp <= 3'b111;			// SLTU
+				6'b000000: aluOp <= 3'b100;			// SLL 
+				6'b000010: aluOp <= 3'b101;			// SRL
+				6'b101010: aluOp <= 3'b110;			// SLT
+				6'b101011: aluOp <= 3'b111;			// SLTU
 				endcase
 			end
 

@@ -9,7 +9,7 @@ module ram
 );
 
 	parameter n = 32;
-	parameter depth = 1024;
+	parameter depth = 256;
 
 	input clk, writeEn;
 	input [n-1:0] address, dataIn;

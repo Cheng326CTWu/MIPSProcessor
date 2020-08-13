@@ -6,7 +6,7 @@ module rom
 );
 
 	parameter n = 32;
-	parameter depth = 1024;
+	parameter depth = 256;
 
 	input [n-1:0] pc;
 	output reg [n-1:0] instruction;
@@ -15,7 +15,7 @@ module rom
 
 	initial
 	begin
-		$readmemb("instr.txt", instr_mem);
+		$readmemh("instr1.txt", instr_mem);
 	end
 
 	always @(*)
