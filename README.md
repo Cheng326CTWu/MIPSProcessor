@@ -34,11 +34,15 @@ This section will outline the progress of the various aspect for this project.
 | ALU                           | Finished              |
 | Decoder                       | Finished              |
 | Mux                           | Finished              |
-| Data Memory                   | Not Started           |
-| Instruction Memory            | Not Started           |
+| Data Memory (RAM)             | Finished              |
+| Instruction Memory (ROM)      | Finished              |
 | Register                      | Finished              |
-| Control Unit                  | Not Started           |
-| MIPS Datapath                 | Not Started           |
+| Register File                 | Finished              |
+| Control Unit                  | Finished              |
+| Sign Ext                      | Finished              |
+| SLL2                          | Finished              |
+| MIPS Core                     | Finished              |
+| MIPS Core TB                  | Finished              |
 
 ### Pipelined
 
