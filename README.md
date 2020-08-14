@@ -50,18 +50,27 @@ This section will outline the progress of the various aspect for this project.
 
 | Modules                       | Current Status        |
 |-------------------------------|-----------------------|
-| ALU                           | Not Started           |
-| Decoder                       | Not Started           |
-| Mux                           | Not Started           |
-| Data Memory                   | Not Started           |
-| Instruction Memory            | Not Started           |
-| Register                      | Not Started           |
+| ALU                           | Finished              |
+| Mux                           | Finished              |
+| Data Memory (RAM)             | Finished              |
+| Instruction Memory (ROM)      | Finished              |
+| Register                      | Finished              |
+| Register File                 | Finished              |
+| SLL2                          | Finished              |
+| Sign Ext                      | Finished              |
 | Control Unit                  | Not Started           |
-| MIPS Datapath                 | Not Started           |
+| Forwarding Unit               | Not Started           |
+| Data Hazard Unit              | Not Started           |
+| IF_ID register                | Not Started           |
+| ID_EX register                | Not Started           |
+| EX_MEM register               | Not Started           |
+| MEM_WB register               | Not Started           |
+| MIPS Core                     | Not Started           |
+| MIPS Core TB                  | Not Started           |
 
 ## Detailed Development Process
 
-**Coming Soon**
+**Please Check the Wiki!**
 
 ## Project Verification
 
