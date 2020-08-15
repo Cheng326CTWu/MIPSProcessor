@@ -1,1 +1,87 @@
+C:/Users/Owner/Desktop/verilog/MIPSProcessor/pipelined/mux2.v {1 {vlog -work work -stats=none C:/Users/Owner/Desktop/verilog/MIPSProcessor/pipelined/mux2.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module mux2_1
 
+Top level modules:
+	mux2_1
+
+} {} {}} C:/Users/Owner/Desktop/verilog/MIPSProcessor/pipelined/register_file.v {1 {vlog -work work -stats=none C:/Users/Owner/Desktop/verilog/MIPSProcessor/pipelined/register_file.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module register_file
+
+Top level modules:
+	register_file
+
+} {} {}} C:/Users/Owner/Desktop/verilog/MIPSProcessor/pipelined/mux3.v {1 {vlog -work work -stats=none {C:\Users\Owner\Desktop\verilog\MIPSProcessor\pipelined\mux3.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module mux3_1
+
+Top level modules:
+	mux3_1
+
+} {} {}} C:/Users/Owner/Desktop/verilog/MIPSProcessor/pipelined/sll2.v {1 {vlog -work work -stats=none {C:\Users\Owner\Desktop\verilog\MIPSProcessor\pipelined\sll2.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module sll2
+
+Top level modules:
+	sll2
+
+} {} {}} C:/Users/Owner/Desktop/verilog/MIPSProcessor/pipelined/rom.v {1 {vlog -work work -stats=none {C:\Users\Owner\Desktop\verilog\MIPSProcessor\pipelined\rom.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module rom
+
+Top level modules:
+	rom
+
+} {} {}} C:/Users/Owner/Desktop/verilog/MIPSProcessor/pipelined/adder.v {1 {vlog -work work -stats=none {C:\Users\Owner\Desktop\verilog\MIPSProcessor\pipelined\adder.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module adder
+
+Top level modules:
+	adder
+
+} {} {}} C:/Users/Owner/Desktop/verilog/MIPSProcessor/pipelined/ram.v {1 {vlog -work work -stats=none {C:\Users\Owner\Desktop\verilog\MIPSProcessor\pipelined\ram.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module ram
+
+Top level modules:
+	ram
+
+} {} {}} C:/Users/Owner/Desktop/verilog/MIPSProcessor/pipelined/sign_ext.v {1 {vlog -work work -stats=none {C:\Users\Owner\Desktop\verilog\MIPSProcessor\pipelined\sign_ext.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module sign_ext
+
+Top level modules:
+	sign_ext
+
+} {} {}} C:/Users/Owner/Desktop/verilog/MIPSProcessor/pipelined/forwarding.v {1 {vlog -work work -stats=none {C:\Users\Owner\Desktop\verilog\MIPSProcessor\pipelined\forwarding.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module forward
+
+Top level modules:
+	forward
+
+} {} {}} C:/Users/Owner/Desktop/verilog/MIPSProcessor/pipelined/register.v {1 {vlog -work work -stats=none {C:\Users\Owner\Desktop\verilog\MIPSProcessor\pipelined\register.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module register
+
+Top level modules:
+	register
+
+} {} {}} C:/Users/Owner/Desktop/verilog/MIPSProcessor/pipelined/core_tb.v {1 {vlog -work work -stats=none C:/Users/Owner/Desktop/verilog/MIPSProcessor/pipelined/core_tb.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+
+} {} {}} C:/Users/Owner/Desktop/verilog/MIPSProcessor/pipelined/core.v {1 {vlog -work work -stats=none C:/Users/Owner/Desktop/verilog/MIPSProcessor/pipelined/core.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+
+} {} {}} C:/Users/Owner/Desktop/verilog/MIPSProcessor/pipelined/control.v {1 {vlog -work work -stats=none C:/Users/Owner/Desktop/verilog/MIPSProcessor/pipelined/control.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+
+} {} {}} C:/Users/Owner/Desktop/verilog/MIPSProcessor/pipelined/alu.v {1 {vlog -work work -stats=none {C:\Users\Owner\Desktop\verilog\MIPSProcessor\pipelined\alu.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module alu
+
+Top level modules:
+	alu
+
+} {} {}}
