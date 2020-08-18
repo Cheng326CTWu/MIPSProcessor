@@ -54,7 +54,14 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 Top level modules:
 	sign_ext
 
-} {} {}} C:/Users/Owner/Desktop/verilog/MIPSProcessor/pipelined/forwarding.v {1 {vlog -work work -stats=none {C:\Users\Owner\Desktop\verilog\MIPSProcessor\pipelined\forwarding.v}
+} {} {}} C:/Users/Owner/Desktop/verilog/MIPSProcessor/pipelined/hazard.v {1 {vlog -work work -stats=none C:/Users/Owner/Desktop/verilog/MIPSProcessor/pipelined/hazard.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module hazard
+
+Top level modules:
+	hazard
+
+} {} {}} C:/Users/Owner/Desktop/verilog/MIPSProcessor/pipelined/forwarding.v {1 {vlog -work work -stats=none C:/Users/Owner/Desktop/verilog/MIPSProcessor/pipelined/forwarding.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
 -- Compiling module forward
 
@@ -68,14 +75,58 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 Top level modules:
 	register
 
-} {} {}} C:/Users/Owner/Desktop/verilog/MIPSProcessor/pipelined/core_tb.v {1 {vlog -work work -stats=none C:/Users/Owner/Desktop/verilog/MIPSProcessor/pipelined/core_tb.v
+} {} {}} C:/Users/Owner/Desktop/verilog/MIPSProcessor/pipelined/MEM_WB.v {1 {vlog -work work -stats=none {C:\Users\Owner\Desktop\verilog\MIPSProcessor\pipelined\MEM_WB.v}
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module MEM_WB_reg
+
+Top level modules:
+	MEM_WB_reg
+
+} {} {}} C:/Users/Owner/Desktop/verilog/MIPSProcessor/pipelined/comparator.v {1 {vlog -work work -stats=none {C:\Users\Owner\Desktop\verilog\MIPSProcessor\pipelined\comparator.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module equalComparator
+
+Top level modules:
+	equalComparator
+
+} {} {}} C:/Users/Owner/Desktop/verilog/MIPSProcessor/pipelined/control.v {1 {vlog -work work -stats=none {C:\Users\Owner\Desktop\verilog\MIPSProcessor\pipelined\control.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module control
+
+Top level modules:
+	control
 
 } {} {}} C:/Users/Owner/Desktop/verilog/MIPSProcessor/pipelined/core.v {1 {vlog -work work -stats=none C:/Users/Owner/Desktop/verilog/MIPSProcessor/pipelined/core.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module mux2_1
+-- Compiling module register_file
+-- Compiling module mux3_1
+-- Compiling module sll2
+-- Compiling module rom
+-- Compiling module ram
+-- Compiling module adder
+-- Compiling module sign_ext
+-- Compiling module hazard
+-- Compiling module forward
+-- Compiling module register
+-- Compiling module MEM_WB_reg
+-- Compiling module ID_EX_reg
+-- Compiling module control
+-- Compiling module alu
+-- Compiling module EX_MEM_reg
+-- Compiling module IF_ID_reg
+-- Compiling module equalComparator
+-- Compiling module core
 
-} {} {}} C:/Users/Owner/Desktop/verilog/MIPSProcessor/pipelined/control.v {1 {vlog -work work -stats=none C:/Users/Owner/Desktop/verilog/MIPSProcessor/pipelined/control.v
+Top level modules:
+	core
+
+} {} {}} C:/Users/Owner/Desktop/verilog/MIPSProcessor/pipelined/ID_EX.v {1 {vlog -work work -stats=none {C:\Users\Owner\Desktop\verilog\MIPSProcessor\pipelined\ID_EX.v}
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module ID_EX_reg
+
+Top level modules:
+	ID_EX_reg
 
 } {} {}} C:/Users/Owner/Desktop/verilog/MIPSProcessor/pipelined/alu.v {1 {vlog -work work -stats=none {C:\Users\Owner\Desktop\verilog\MIPSProcessor\pipelined\alu.v}
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
@@ -83,5 +134,19 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 
 Top level modules:
 	alu
+
+} {} {}} C:/Users/Owner/Desktop/verilog/MIPSProcessor/pipelined/IF_ID.v {1 {vlog -work work -stats=none {C:\Users\Owner\Desktop\verilog\MIPSProcessor\pipelined\IF_ID.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module IF_ID_reg
+
+Top level modules:
+	IF_ID_reg
+
+} {} {}} C:/Users/Owner/Desktop/verilog/MIPSProcessor/pipelined/EX_MEM.v {1 {vlog -work work -stats=none {C:\Users\Owner\Desktop\verilog\MIPSProcessor\pipelined\EX_MEM.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module EX_MEM_reg
+
+Top level modules:
+	EX_MEM_reg
 
 } {} {}}
