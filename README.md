@@ -88,3 +88,13 @@ This section will outlines a checklist for what has been verified for the projec
 EDA playground is an online "compiler" which allow engineers to simulate various HDLs
 
 * [EDA playground](https://www.edaplayground.com/)
+
+## Reference
+
+The following are links to resources used as reference
+
+* [5 stage Pipeline MIPS](https://programmersought.com/article/87204376573/)
+* [HackMD](https://hackmd.io/@8bFA57f7SRG-K7AAT8s62g/ryv1NT3S#%E7%AC%AC18%EF%BD%9E21%E8%AC%9B-Pipelining-75)
+* [Mohamed Minawi's Verilog MIPS Processor](https://github.com/mohamed-minawi/MIPS-Processor-Verilog)
+* [MIPS assembly instruction format](https://en.wikibooks.org/wiki/MIPS_Assembly/Instruction_Formats)
+* [UWashington CSE378](https://courses.cs.washington.edu/courses/cse378/09wi/lectures.html)
