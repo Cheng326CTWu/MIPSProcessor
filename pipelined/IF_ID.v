@@ -23,7 +23,7 @@ module IF_ID_reg
         end
         else
         begin
-            if(!stall)
+            if(stall)
             begin
                 pcPlus4_ID <= pcPlus4_ID;
                 instr_ID <= instr_ID;

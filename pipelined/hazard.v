@@ -1,23 +1,34 @@
 // This is the stall logic
 module hazard
 (
-    IF_ID_rs,
-    IF_ID_rt,
-    memWriteEn_EX,
-    ID_EX_rt,
-    stall
+    instr_ID,
+    rt_EX,
+    rs_ID,
+    rt_ID,
+    writeReg_MEM,
+    writeReg_EX,
+    memToReg_EX,
+    memToReg_MEM,
+    regWrite_EX,
+    IF_ID_stall,
+    ID_EX_stall
 );
 
-    input [4:0] IF_ID_rs, IF_ID_rt, ID_EX_rt;
-    input memWriteEn_EX;
-    output reg [2:0] stall;
+    input [31:0] instr_ID;
+    input [4:0] rt_EX, rs_ID, rt_ID, writeReg_MEM, writeReg_EX;
+    input memToReg_EX, memToReg_MEM, regWrite_EX;
+    output reg IF_ID_stall, ID_EX_stall;
+
+    reg lwStall, bStall;
 
     always @(*)
     begin
-        if((memWriteEn_EX == 1'b0) && ((ID_EX_rt == IF_ID_rs) || (ID_EX_rt == IF_ID_rt)))
-            stall = 3'b000;
-        else
-            stall = 3'b111;
+        lwStall = ((rs_ID == rt_EX) || (rt_ID == rt_EX)) && memToReg_EX;
+
+        bStall = (instr_ID[31:26] == 6'b000100) & (regWrite_EX & (writeReg_EX == rs_ID | writeReg_EX == rt_ID) | memToReg_MEM & (writeReg_MEM == rs_ID | writeReg_MEM == rt_ID));
+
+        IF_ID_stall = lwStall || bStall;
+        ID_EX_stall = lwStall || bStall;
     end
 
 endmodule

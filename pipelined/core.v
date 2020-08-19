@@ -36,6 +36,7 @@ module core
     output [31:0] pc_IF, instr_IF;
     wire [31:0] pcNext_IF, pcAdd4_IF;
     wire pcSrc_IF;
+    wire IF_stall;
 
     // ID wires
     output [31:0] instr_ID, signExtImmed_ID, sllSignExtImmed_ID;
@@ -44,7 +45,8 @@ module core
     wire [31:0] pcAdd4_ID, pcBranchAdderRes_ID;
     wire regDst_ID, regWrite_ID, memToReg_ID, memWriteEn_ID, aluSrc_ID;
     wire equalFlag;
-    wire [2:0] stall;
+    wire [7:0] controlSignals_ID, controlMuxOut_ID;
+    wire ID_stall;
 
     // EX wires
     output [31:0] instr_EX, signExtImmed_EX;
@@ -73,20 +75,19 @@ module core
 
     // Instruction Fetch Stage (IF)
     rom instrMem(.pc(pc_IF), .instruction(instr_IF));
-    register #(32) pcRegister(.clk(clk), .rst(rst), .en(stall[2]), .d(pcNext_IF), .q(pc_IF));
+    register #(32) pcRegister(.clk(clk), .rst(rst), .stall(!IF_stall), .d(pcNext_IF), .q(pc_IF));
     adder #(32) pcAdd4(.a(pc_IF), .b(32'd4), .sum(pcAdd4_IF));
     mux2_1 #(32) pcBranchMux(.d0(pcAdd4_IF), .d1(pcBranchAdderRes_ID), .sel(pcSrc_IF), .out(pcNext_IF));
 
     // IF_ID
-    IF_ID_reg IF_ID_Reg(.clk(clk), .rst(rst), .stall(stall[1]), .pcPlus4_IF(pcAdd4_IF), .instr_IF(instr_IF), .pcPlus4_ID(pcAdd4_ID), .instr_ID(instr_ID));
+    IF_ID_reg IF_ID_Reg(.clk(clk), .rst(rst), .stall(ID_stall), .pcPlus4_IF(pcAdd4_IF), .instr_IF(instr_IF), .pcPlus4_ID(pcAdd4_ID), .instr_ID(instr_ID));
 
     // Instruction Decode Stage (ID)
     control ctrlUnit(.opCode(instr_ID[31:26]), .func(instr_ID[5:0]), .equalFlag(equalFlag),
-                     .regDst_ID(regDst_ID), .regWrite_ID(regWrite_ID), .aluSrc_ID(aluSrc_ID),
-                     .memWriteEn_ID(memWriteEn_ID), .memToReg_ID(memToReg_ID), .aluOp_ID(aluOp_ID), .pcSrc_IF(pcSrc_IF));
+                     .controlSignals_ID(controlSignals_ID), .pcSrc_IF(pcSrc_IF));
 
-    mux2_1 #(32) ctrlMux(.d0(0), .d1({regDst_ID, regWrite_ID, aluSrc_ID, memWriteEn_ID, memToReg_ID, aluOp_ID}),
-                         .sel(stall[0]), .out({regDst_ID, regWrite_ID, aluSrc_ID, memWriteEn_ID, memToReg_ID, aluOp_ID}));
+    mux2_1 #(8) ctrlMux(.d0(controlSignals_ID), .d1(0), .sel(ID_stall), .out(controlMuxOut_ID));
+    assign {regDst_ID, regWrite_ID, aluSrc_ID, memWriteEn_ID, memToReg_ID, aluOp_ID} = controlMuxOut_ID;
     sign_ext immediateSignExt(.a(instr_ID[15:0]), .out(signExtImmed_ID));
     sll2 shiftLeft2(.a(signExtImmed_ID), .res(sllSignExtImmed_ID));
     register_file reg_fil(.clk(clk), .rst(rst), .readRegister1(instr_ID[25:21]), .readRegister2(instr_ID[20:16]),
@@ -95,7 +96,11 @@ module core
 
     equalComparator #(32) comparator(.data1(aluDataOne_EX), .data2(forwardMux2Out_EX), .equal(equalFlag));
     adder #(32) pcBranchAdder(.a(sllSignExtImmed_ID), .b(pcAdd4_ID), .sum(pcBranchAdderRes_ID));
-    hazard hazardUnit(.IF_ID_rs(instr_ID[25:21]), .IF_ID_rt(instr_ID[20:16]), .memWriteEn_EX(memWriteEn_EX), .ID_EX_rt(instr_EX[20:16]), .stall(stall));
+
+    hazard hazardUnit(.instr_ID(instr_ID), .rt_EX(instr_EX[20:16]), .rs_ID(instr_ID[25:21]), .rt_ID(instr_ID[20:16]),
+                      .writeReg_MEM(writeReg_MEM), .writeReg_EX(writeReg_EX), .regWrite_EX(regWrite_EX),
+                      .memToReg_MEM(memToReg_MEM), .memToReg_EX(memToReg_EX),
+                      .IF_ID_stall(IF_stall), .ID_EX_stall(ID_stall));
 
     // ID_EX
     ID_EX_reg ID_EX_Reg(.clk(clk), .rst(rst), .regFileDataOne_ID(regFileDataOne_ID), .regFileDataOne_EX(regFileDataOne_EX),

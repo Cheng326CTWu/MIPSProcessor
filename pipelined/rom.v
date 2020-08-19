@@ -15,7 +15,7 @@ module rom
 
 	initial
 	begin
-		$readmemh("instr.txt", instr_mem);
+		$readmemh("instr1.txt", instr_mem);
 	end
 
 	always @(*)
