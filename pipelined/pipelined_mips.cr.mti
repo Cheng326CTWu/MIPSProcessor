@@ -26,6 +26,13 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 Top level modules:
 	sll2
 
+} {} {}} C:/Users/Owner/Desktop/verilog/MIPSProcessor/pipelined/rom.v {1 {vlog -work work -stats=none {C:\Users\Owner\Desktop\verilog\MIPSProcessor\pipelined\rom.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module rom
+
+Top level modules:
+	rom
+
 } {} {}} C:/Users/Owner/Desktop/verilog/MIPSProcessor/pipelined/adder.v {1 {vlog -work work -stats=none C:/Users/Owner/Desktop/verilog/MIPSProcessor/pipelined/adder.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
 -- Compiling module adder
