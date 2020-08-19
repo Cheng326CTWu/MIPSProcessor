@@ -58,15 +58,15 @@ This section will outline the progress of the various aspect for this project.
 | Register File                 | Finished              |
 | SLL2                          | Finished              |
 | Sign Ext                      | Finished              |
-| Control Unit                  | Not Started           |
-| Forwarding Unit               | Not Started           |
-| Data Hazard Unit              | Not Started           |
-| IF_ID register                | Not Started           |
-| ID_EX register                | Not Started           |
-| EX_MEM register               | Not Started           |
-| MEM_WB register               | Not Started           |
-| MIPS Core                     | Not Started           |
-| MIPS Core TB                  | Not Started           |
+| Control Unit                  | Finished              |
+| Forwarding Unit               | Finished              |
+| Data Hazard Unit              | Finished              |
+| IF_ID register                | Finished              |
+| ID_EX register                | Finished              |
+| EX_MEM register               | Finished              |
+| MEM_WB register               | Finished              |
+| MIPS Core                     | Finished              |
+| MIPS Core TB                  | Finished              |
 
 ## Detailed Development Process
 
@@ -78,9 +78,9 @@ This section will outlines a checklist for what has been verified for the projec
 
 | Verification(s)                   | Current Status    |
 |-----------------------------------|-------------------|
-| Compliable                        | In Progress       |
-| Simulation Correctness            | In Progress       |
-| Synthesizable                     | In Progress       |
+| Compliable                        | Finished          |
+| Simulation Correctness            | Finished          |
+| Synthesizable                     | Finished          |
 | Hardware Platform Verification    | TBD               |
 
 ## Online Compilation Resource
